@@ -1,3 +1,4 @@
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 0
@@ -8,25 +9,25 @@ import org.jointheleague.graphical.robot.Robot;
 // This recipe draws a square using the Robot
 
 public class RobotSquare {
-    public static void main(String[] args) throws Exception {
- 
-    	// 1. Make a new Robot
+	public static void main(String[] args) throws Exception {
 
+		// 1. Make a new Robot
+		Robot nik = new Robot();
 
-        // 3. Put the robot's pen down
+		// 3. Put the robot's pen down
+		nik.penDown();
 
+		// 6. Make the robot move as fast as possible
+nik.setSpeed(500);
+		// 5. Do everything below here 4 times
+		for (int i = 6; i < 10; i++) {
 
-        // 6. Make the robot move as fast as possible
+			// 2. Move your robot 200 pixels
+			nik.move(200);
 
+			// 4. Turn the robot 90 degrees to the right (90 degrees)
 
-        // 5. Do everything below here 4 times
-
-
-        //         2. Move your robot 200 pixels
-
-
-        //         4. Turn the robot 90 degrees to the right (90 degrees)
-
-
-    }
+			nik.turn(90);
+		}
+	}
 }
